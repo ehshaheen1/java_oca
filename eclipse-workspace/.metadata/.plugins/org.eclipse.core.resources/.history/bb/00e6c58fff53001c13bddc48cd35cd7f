@@ -1,0 +1,15 @@
+package oca.chapter1;
+
+public class DecimelOperationUnderscore {
+
+	public static void main(String[] args) {
+		//int x= _1200; // int has same rule as well 
+		//Underscore cant be in first and last and between decimal point 
+		//double notAtStart = _1000.00; // DOES NOT COMPILE
+		//double notAtEnd = 1000.00_; // DOES NOT COMPILE
+		//double notByDecimal = 1000_.00; // DOES NOT COMPILE
+		double annoyingButLegal = 1_00_0.0_0; // this one compiles
+
+	}
+
+}

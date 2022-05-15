@@ -1,0 +1,16 @@
+package oca.chapter2;
+
+public class CompoundOperator {
+
+	public static void main(String[] args) {
+		//long x = 10;
+		//int y = 5;
+		//y = y * x; // DOES NOT COMPILE
+		
+		long x = 10;
+		int y = 5;
+		y *= x; //Compound operator(*=,/= etc) cast automatically
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package test6;
+
+public class M {
+	   public static void main(String[] args){
+		      N n = new N();
+		      n.makeThisNull();
+		   }
+}
+class N{
+   private M m = new M();
+   public void makeItNull(M pM){
+      pM = null;
+   }
+   public void makeThisNull(){
+      makeItNull(m);
+   }
+}
+
+
+

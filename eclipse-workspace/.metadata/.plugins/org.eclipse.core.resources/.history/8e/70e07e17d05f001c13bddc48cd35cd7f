@@ -1,0 +1,21 @@
+package test1;
+
+class AB{
+}
+
+class AA extends AB { 
+}
+
+
+public class GetClassType{
+    public static void main(String[] args) throws Exception {
+        AB a = new AB();
+        AA aa = new AA();
+        a = aa;
+        System.out.println("a = "+a.getClass());
+        System.out.println("aa = "+aa.getClass());
+    }
+}
+ 
+
+

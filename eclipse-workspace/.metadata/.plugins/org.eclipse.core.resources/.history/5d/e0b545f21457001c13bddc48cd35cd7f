@@ -1,0 +1,11 @@
+package oca.chapter3;
+
+public class StringReplaceMethod {
+
+	public static void main(String[] args) {
+		System.out.println("abcabc".replace('a', 'A')); // AbcAbc // It will replace all over the string
+		System.out.println("abcabc".replace("a", "A")); // AbcAbc
+
+	}
+
+}

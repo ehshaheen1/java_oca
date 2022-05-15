@@ -1,0 +1,33 @@
+package oca.chapter1;
+
+public class LocalVariableInitiliazation {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public int ops()
+	{
+		int y = 10; //Local variable need to be initialized before use
+		 int x;
+		// int reply = x + y; // DOES NOT COMPILE
+		 return 1;
+	}
+	
+	public void findAnswer(boolean check) {
+		int answer;
+		int onlyOneBranch;
+		if (check) {   //Parameterized are considered local variable and have to be initialized before use
+		onlyOneBranch = 1; 
+		answer = 1;
+		
+	}  else { 
+		answer = 2;
+		}
+		 
+		System.out.println(answer);
+	   // System.out.println(onlyOneBranch); // DOES NOT COMPILE
+		
+		}
+
+}

@@ -1,0 +1,22 @@
+package test3;
+
+public class Inheritance36 {
+
+    int si = 10;
+   public static void main (String args[]){
+	   System.out.println(4 + 1.0f); 
+      new Inheritance36();
+   }
+   public Inheritance36(){
+      System.out.println(this);
+   }
+   public String toString(){
+      return "Inheritance36.si = "+si;
+    short s=9;
+    Integer i = 9; System.out.println( s == i );
+  
+      
+   }
+}
+
+

@@ -1,0 +1,25 @@
+package test1;
+
+public class DataConversion {
+
+	public static void main(String[] args) {
+
+		      char c;
+		      int i;
+		      c = 'a';//1
+		      System.out.println(c);
+		      i = c;  //2
+		      System.out.println(i);
+		      i++;    //3
+		      System.out.println(i);
+		      //c = i;  //4  int can't assigned to char without casting
+		      System.out.println(c);
+		      c++;    //5
+		      System.out.println(c);
+		   }
+		
+
+
+	}
+
+

@@ -1,0 +1,10 @@
+package oca.chapter3;
+
+public class ArrayCheck {
+
+	public static void main(String[] args) {
+		int[] numbers2 = new int[] {42, 55, 99}; //We dont have to put size as we are initializing data
+
+	}
+
+}

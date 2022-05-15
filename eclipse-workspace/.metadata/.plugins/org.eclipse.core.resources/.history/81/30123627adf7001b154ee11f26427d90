@@ -1,0 +1,19 @@
+package ocatest;
+
+interface Moveable {
+    void move();
+}
+ 
+abstract class Animal {
+   public void move() {
+        System.out.println("ANIMAL MOVING");
+    }
+}
+class Dog extends Animal implements Moveable {} 
+
+public class Test {
+    public static void main(String[] args) {
+    	Moveable moveable = new Dog();
+        moveable.move();
+    }
+}

@@ -1,0 +1,18 @@
+package strings;
+
+public class GetCharMethod {
+
+	   // demo of getChars() method
+
+    public static void main(String[] args) {
+
+        char [] copy = new char[20];
+
+        String misery = "I'm your number one fan.";
+
+        misery.getChars(9, 23, copy, 5);
+
+        System.out.println(copy);
+
+    }
+}

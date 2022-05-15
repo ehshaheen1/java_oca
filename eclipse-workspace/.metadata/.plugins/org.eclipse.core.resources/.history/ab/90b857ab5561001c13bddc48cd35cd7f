@@ -1,0 +1,14 @@
+package test1;
+
+public class ByteConvertInt61 {
+
+	public static void main(String[] args) {
+
+      byte b = 0 ;
+      int i = 200 ;
+      b = (byte) i;
+      System.out.println(i+" "+b);
+   }
+}
+
+

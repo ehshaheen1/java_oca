@@ -1,0 +1,19 @@
+package oca.chapter2;
+
+//Data types supported by switch statements include the following:
+//int and Integer
+//byte and Byte
+//short and Short
+//char and Character
+//int and Integer
+//String 
+//enum values
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package ocatest;
+
+import java.sql.SQLException;
+
+ interface Profitable1 {
+    default double profit() {
+        return 12.5;
+    }
+}
+ 
+ interface Profitable2 {
+	    default double profit() {
+	        return 25.5;
+	    }
+	}
+ 
+public abstract class Test implements Profitable1, Profitable2  {
+    
+    }

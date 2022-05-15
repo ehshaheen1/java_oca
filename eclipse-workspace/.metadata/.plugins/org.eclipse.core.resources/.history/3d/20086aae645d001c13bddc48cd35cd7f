@@ -1,0 +1,18 @@
+package oca.chapter2;
+
+public class CastingPrimitiveValue {
+
+	public static void main(String[] args) {
+		int x = (int)100.0;// Casting always goes floor/lower value and if value is out of range then it will return max value like max int
+		System.out.println(x);
+		System.out.println(Integer.MAX_VALUE);
+		short y = (short)1921222; // Stored as 20678
+		System.out.println(y);
+		System.out.println(Short.MAX_VALUE);
+		int z = (int)9l;
+		System.out.println(z);
+		long t = 192301398193810323L;
+
+	}
+
+}

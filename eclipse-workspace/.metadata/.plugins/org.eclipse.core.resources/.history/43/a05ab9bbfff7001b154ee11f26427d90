@@ -1,0 +1,21 @@
+package ocatest;
+
+import java.io.IOException;
+
+class Parent {
+    Parent() throws IOException {
+        System.out.print("HAKUNA");
+    }
+}
+ 
+class Child extends Parent {
+    Child() throws Throwable {
+        System.out.println("MATATA");
+    }
+}
+ 
+public class Test {
+    public static void main(String[] args) throws Exception {
+        new Child();
+    }
+}

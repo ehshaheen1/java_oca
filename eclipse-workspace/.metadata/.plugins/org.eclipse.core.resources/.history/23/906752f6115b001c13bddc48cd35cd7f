@@ -1,0 +1,14 @@
+package oca.chapter5;
+
+interface CheckInterface{
+  int x =10;	
+}
+public class InterfaceExample implements CheckInterface{
+    
+	public static void main(String[] args) {
+		//x=20;
+		System.out.println(x);
+
+	}
+
+}

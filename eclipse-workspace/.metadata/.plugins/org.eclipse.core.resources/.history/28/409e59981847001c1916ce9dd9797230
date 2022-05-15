@@ -1,0 +1,19 @@
+package flowcontrol;
+
+public class Counter {
+
+	// adding numbers smaller than 12 and undividable by three
+
+    public static void main(String[] args) {
+
+        int counter = 0, sum = 0;
+        System.out.println(0%3);
+
+        do {
+            if (counter % 3 == 0) continue;
+            sum += counter;
+            System.out.println("Sum "+sum);
+        } while (counter++ < 11);
+        System.out.println(sum);
+    }
+}

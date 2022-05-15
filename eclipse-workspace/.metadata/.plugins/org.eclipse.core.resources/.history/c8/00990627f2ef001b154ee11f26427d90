@@ -1,0 +1,13 @@
+package ocatest;
+
+public class Test {
+	
+	 public static void main(String [] args) {
+		 boolean flag = true; 
+	        do { 
+	            System.out.println("100hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjavdbdbfdbfmnbnfanbmnbnmbnbfanfmnm,nf,anfmnfnn,fanfa"); 
+	        } while (flag); 
+	        
+	        System.out.println("Bye"); 
+          }
+}

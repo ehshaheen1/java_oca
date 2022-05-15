@@ -1,0 +1,14 @@
+package oca.chapter2;
+
+public class BinaryOperatorPresidence {
+
+	public static void main(String[] args) {
+		
+		//What is the data type of x * y / z?
+				short x = 14;
+				float y = 13;
+				double z = 30;
+				System.out.println(x * y / z);
+	}
+
+}

@@ -1,0 +1,53 @@
+package flowcontrol;
+
+public class SwitchBody {
+
+	 public static void main(String[] args) {
+
+	        // switch statement must have a body, although that body can be empty or effectively empty
+
+	        switch (8) {
+	        }
+
+	        switch (6) {
+	            default:
+	        }
+
+	        switch (5) {
+	            case 4:
+	        }
+
+//	        switch (2) ;                  // does not compile
+
+//	        switch (3) {break;}           // does not compile
+	        
+	        int smokedToday = 20;
+	        int leftToSmoke;
+
+	        // without the break statement, this will compile
+	        switch (smokedToday) {
+	            case 2: leftToSmoke = 28;
+	            case 15: leftToSmoke = 15;
+	            default: leftToSmoke = 10;
+	        }
+	        System.out.println(leftToSmoke);
+
+
+	        // but, with the break statement, there will be a problem
+	        int smokedYesterday = 24;
+	        int leftUnsmoked;
+
+	        switch (smokedToday) {
+	            case 10: leftUnsmoked = 20;
+	            case 15: leftUnsmoked = 15;
+	            case 7: leftUnsmoked = 23; break;
+	            default: leftUnsmoked = 30;
+	            case 1:
+	        }
+//	        System.out.println(leftUnsmoked);       // does not compile
+
+
+
+	    }
+
+}

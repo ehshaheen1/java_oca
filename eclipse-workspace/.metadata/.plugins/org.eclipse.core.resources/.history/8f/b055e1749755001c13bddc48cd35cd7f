@@ -1,0 +1,31 @@
+package oca.chapter2;
+
+public class CompoundOperator {
+
+	public static void main(String[] args) {
+		//long x = 10;
+		//int y = 5;
+		//y = y * x; // DOES NOT COMPILE
+		
+		long x = 10;
+		int y = 5;
+		y *= x; //Compound operator(*=,/= etc) cast automatically
+		
+		A a = new A();
+		B b = new B();
+		
+		if(a instanceof B) {
+			System.out.println("opsssss");
+		}
+		else
+		{
+			System.out.println("Else");
+		}
+
+	}
+
+}
+
+class A{}
+class B extends A{}
+class C extends A{}

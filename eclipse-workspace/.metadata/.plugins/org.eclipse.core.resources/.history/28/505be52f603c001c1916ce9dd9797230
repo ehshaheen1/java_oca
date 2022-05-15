@@ -1,0 +1,43 @@
+package basics;
+
+public class CheckBoolean {
+
+	 // condition expression in an if statement >can< contain method call
+    // as long as it returns boolean value
+
+    // static variables and instance variables can not have the same name
+
+    static String name = "Fallon";
+   // String name = "Jimmy";    
+    public static void main(String[] args) {
+    	
+            //one of these two declarations have to be commented out
+
+            // however, local variable will not cause compile-time error,
+            // but simply hide or shadow the static variable
+            System.out.println(name);
+            String name = "Jimmy";
+            System.out.println(name);
+    	
+
+        if (haveMatches()) {
+            System.out.println("C'mon baby, light my fire!");
+        }
+
+//        if (haveLighter()) {                  // does not compile, not a boolean value
+//            System.out.println("Sleep now with the fire.");
+//        }
+
+
+    }
+
+    public static boolean haveMatches () {
+        return true;
+    }
+
+    public static int haveLighter() {
+        return 5;
+    }
+    
+
+}

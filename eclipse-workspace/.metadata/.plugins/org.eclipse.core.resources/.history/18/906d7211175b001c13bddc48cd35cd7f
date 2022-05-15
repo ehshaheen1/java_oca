@@ -1,0 +1,30 @@
+package oca.chapter5;
+
+interface Herbivore {
+	public void eatPlants();
+}
+
+interface Omnivore {
+	public void eatPlants();
+
+	public void eatMeat();
+}
+
+public class CheckTwoInterfaceSameMethods implements Herbivore, Omnivore {
+	public void eatMeat() {
+		System.out.println("Eating meat");
+	}
+
+	public void eatPlants() {
+		System.out.println("Eating plants");
+	}
+
+	public static void main(String[] args) {
+		
+		Herbivore hb= new CheckTwoInterfaceSameMethods();
+		Omnivore om= new CheckTwoInterfaceSameMethods();
+		hb.eatPlants();
+		om.eatPlants();
+	}
+
+}

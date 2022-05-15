@@ -1,0 +1,14 @@
+package test2;
+
+public class Array11 {
+
+	public static void main(String[] args) {
+
+      if (args[0].equals("open"))
+         if (args[1].equals("someone"))// else always goes nearest if
+            System.out.println("Hello!"); //the else goes with the previous unmatched if
+      else System.out.println("Go away "+ args[1]);
+      else System.out.println("oposos");
+    }
+}
+

@@ -1,0 +1,17 @@
+package ocatest;
+
+class Super {
+     int NUM = -1; //Line n1
+}
+ 
+class Sub extends Super {
+    Object NUM;
+}
+ 
+public class Test {
+    public static void main(String[] args) {
+        Sub obj = new Sub();
+        obj.NUM = 200; //Line n2
+        System.out.println(obj.NUM); //Line n3
+    }
+}

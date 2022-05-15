@@ -1,0 +1,13 @@
+package oca.chapter3;
+
+public class TestProtectedModifier {
+	protected int x=10;
+    
+	protected int ops()
+	{
+		return 0;
+	}
+		
+
+	}
+

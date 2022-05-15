@@ -1,0 +1,16 @@
+package ocatest;
+
+interface Profitable {
+    double profitPercentage = 42.0;
+}
+ 
+class Business implements Profitable {
+  public static  double profitPercentage = 50.0; //Line n1
+}
+ 
+public class Test {
+    public static void main(String[] args) {
+    	Business obj = new Business(); //Line n2
+        System.out.println(obj.profitPercentage); //Line n3
+    }
+}

@@ -1,0 +1,15 @@
+package oca.chapter2;
+
+public class PostPreIncrementPreIncDec {
+
+	public static void main(String[] args) {
+		int x = 3;//2
+		int y = ++x * 5 / x-- + --x; // post increment and pre increment will start from left to right 
+		//      4*5/4=5+2=7
+		
+		System.out.println("x is " + x);
+		System.out.println("y is " + y);
+
+	}
+
+}

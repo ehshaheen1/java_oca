@@ -1,0 +1,13 @@
+package ocabookcode;
+
+ class PublicClassVSFile2 {
+	       }
+// class access modifier must be public or default 
+  class PublicClassVSFile { //File name and class name must have to be same
+	private String name;
+	
+	public static void main(String[] args) {
+      System.out.println("ops");
+	}
+
+}

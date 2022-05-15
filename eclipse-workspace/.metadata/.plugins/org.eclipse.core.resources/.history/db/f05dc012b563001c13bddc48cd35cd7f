@@ -1,0 +1,11 @@
+package test2;
+
+public class CheckImport24 {
+
+	public static void main(String[] args) {
+
+
+        Logger logger = new Logger();
+        logger.log("hello");
+    }
+}

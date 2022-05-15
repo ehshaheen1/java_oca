@@ -1,0 +1,18 @@
+package enthuware;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class TestEnthuware {
+	public static void main(String[] args) {
+		ArrayList s1 = new ArrayList();
+		try {
+			while (true) {
+				s1.add("sdfa");
+			}
+		} catch (java.lang.OutOfMemoryError e) {
+			e.printStackTrace();
+		}
+		System.out.println(s1.size());
+	}
+}

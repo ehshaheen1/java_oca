@@ -1,0 +1,21 @@
+package enthuware;
+
+class Holder{
+
+   public static void main(String[] args){
+      int[][] a = { { 00, 01 }, { 10, 11 } };
+      int i = 99;
+      try {
+        System.out.println( a[val()][i = 1]++);
+      } catch (Exception e) {
+         System.out.println( i+", "+a[1][1]);
+      }
+   }
+   static int val() 
+   {
+	   return 1;
+   //throws Exception {  
+     //throw new Exception("unimplemented");  
+   }
+}
+

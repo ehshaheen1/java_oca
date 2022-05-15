@@ -1,0 +1,37 @@
+package polymorphism.shadowingvsoverriding;
+
+class AncientGreece{
+	
+    public String officialLanguage = "Greek";
+    public String getLargestCityName() {
+        return "Athens";
+    }
+}
+
+
+class RomanEmpire extends AncientGreece{
+    public String officialLanguage = "Latin";
+    public String getLargestCityName() {
+        return "Rome";
+    }
+
+    public static void main(String[] args){
+
+        AncientGreece a = new AncientGreece();
+        AncientGreece b = new RomanEmpire();
+        RomanEmpire c = new RomanEmpire();
+
+        // in the first case, everything works fine
+        System.out.println(a.officialLanguage);//Greek
+        System.out.println(a.getLargestCityName() + "\n"); //Athens
+
+        // in this case, officialLanguage variable remains the same
+        System.out.println(b.officialLanguage);//Greek
+        System.out.println(b.getLargestCityName()+ "\n");           // method is overridden
+
+        // everything works fine
+        System.out.println(c.officialLanguage);
+        System.out.println(c.getLargestCityName());
+
+    }
+}

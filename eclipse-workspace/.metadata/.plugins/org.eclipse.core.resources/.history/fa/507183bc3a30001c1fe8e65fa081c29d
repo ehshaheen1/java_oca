@@ -1,0 +1,27 @@
+package enthuware;
+
+ public class Holder{
+	 public static void main(String[] args) {
+		
+	}
+
+   void method1() throws java.io.IOException, NullPointerException{
+      someMethod("arguments");
+      // some I/O operations
+   }
+   int someMethod(String str){
+      if(str == null) throw new NullPointerException();
+      else return str.length();
+   }
+}
+ class NewBase extends Holder{
+      void method1(){
+           someMethod("args");
+      }
+}
+
+
+
+
+
+

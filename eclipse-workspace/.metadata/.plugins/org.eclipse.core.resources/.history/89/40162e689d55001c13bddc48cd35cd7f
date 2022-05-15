@@ -1,0 +1,13 @@
+package oca.chapter2;
+
+public class TernaryOperator {
+
+	public static void main(String[] args) {
+		int i = 5;
+		String result = i % 5 == 0 ? "a" : i % 3 == 0 ? "b" : i % 5 == 0 ? "c" : i % 7 == 0 ? "d" : "e";
+		System.out.println(result);
+		
+
+	}
+
+}

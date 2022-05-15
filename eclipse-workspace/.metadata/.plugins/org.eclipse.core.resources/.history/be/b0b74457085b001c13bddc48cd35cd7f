@@ -1,0 +1,21 @@
+package oca.chapter5;
+
+class Rodent {
+protected int tailLength = 4;
+public void getRodentDetails() {
+System.out.println("[parentTail="+tailLength+"]");
+}
+}
+public class HidingVariable extends Rodent{
+	protected int tailLength = 8;
+	public void getMouseDetails() {
+	System.out.println("[tail="+tailLength +",parentTail="+super.tailLength+"]");
+	}
+	public static void main(String[] args) {
+		HidingVariable mouse = new HidingVariable();
+		mouse.getRodentDetails();
+		mouse.getMouseDetails();
+
+	}
+
+}

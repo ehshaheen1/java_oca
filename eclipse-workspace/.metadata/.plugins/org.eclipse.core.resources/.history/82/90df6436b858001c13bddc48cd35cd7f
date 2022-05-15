@@ -1,0 +1,16 @@
+package oca.chapter4;
+
+public class StaticInitialization {
+// static final variable can initialized in Static block
+	private static final int NUM_SECONDS_PER_HOUR;
+	static {
+		int numSecondsPerMinute = 60;
+		int numMinutesPerHour = 60;
+		NUM_SECONDS_PER_HOUR = numSecondsPerMinute * numMinutesPerHour;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

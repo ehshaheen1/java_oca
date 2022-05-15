@@ -1,0 +1,13 @@
+package oca.chapter1;
+
+import java.util.Date; //Specific will get high presedence
+import java.sql.*; // DOES NOT COMPILE
+
+public class NamingConflict {
+
+	public static void main(String[] args) {
+		Date date;
+
+	}
+
+}

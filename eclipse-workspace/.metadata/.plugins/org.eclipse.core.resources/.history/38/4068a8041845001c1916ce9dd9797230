@@ -1,0 +1,16 @@
+package exceptions;
+
+public class ClassCastExceptionEx {
+
+	 // this will compile, but throw java.lang.ClassCastException at runtime
+
+    public static void main(String[] args) {
+
+        String s = (String) getObject();
+
+    }
+
+    static Object getObject () {
+        return new Object();
+    }
+}

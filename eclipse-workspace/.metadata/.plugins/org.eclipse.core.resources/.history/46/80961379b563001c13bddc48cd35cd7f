@@ -1,0 +1,12 @@
+package test2;
+
+
+public class CheckImport24 {
+
+	public static void main(String[] args) {
+
+
+        test2.TestCheck.Logger logger = new  test2.TestCheck.Logger();
+        logger.log("hello");
+    }
+}

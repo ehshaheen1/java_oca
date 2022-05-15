@@ -1,0 +1,20 @@
+package test2;
+
+public class EqualCheck {
+	
+	String name;
+	int id;
+
+	public static void main(String[] args) {
+		
+		EqualCheck o1= new EqualCheck();
+		EqualCheck o2= new EqualCheck();
+		if(o1.equals(o2))
+		{
+			System.out.println("OPS");
+		}
+		else {System.out.println("False");}
+		
+	}
+
+}

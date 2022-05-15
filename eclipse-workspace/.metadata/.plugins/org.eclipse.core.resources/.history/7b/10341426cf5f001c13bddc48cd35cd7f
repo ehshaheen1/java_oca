@@ -1,0 +1,9 @@
+package test1;
+
+import static test1example.X.*;
+
+public class CheckStaticImport {
+public static void main(String[] args) {
+	System.out.println(LOGICID);
+}
+}

@@ -1,0 +1,58 @@
+package basics;
+
+public class VariableWithLabel {
+	
+	 static int sentenceOne = 5;
+	    static int sentenceTwo;         // uninitialised
+
+	    // initialisation of static variables
+	    static {
+	         sentenceOne = 1;        // this is local variable that does not affect static 'sentenceOne', but simply shadows it
+	        sentenceTwo = sentenceOne;
+	    }
+
+	public static void main(String[] args) {
+	
+        System.out.println(sentenceOne + sentenceTwo);      // output: 6
+
+        // the label can not be used in the same line with a variable declaration
+
+//        THEBEGINING: int i = 0;         // does not compile
+
+
+        SECONDBEGINING:
+        {
+            for (int i = 0; i < 10; i++) {
+                System.out.println("i: " + i);
+                if (i == 5) break SECONDBEGINING;
+            }
+        }
+
+
+        int k = 0;
+        THIRDBEGINING:
+        {
+
+            INNERLABEL:
+//            System.out.println("third beginning");       // if left uncommented, this line will produce compile-time error
+                                                           // since it has to be located right before the loop
+            do {
+                k++;
+                System.out.println("k: " + k);
+                if (k == 5) break THIRDBEGINING;
+                if (k == 3) {
+                    System.out.println("inner");
+                    continue INNERLABEL;
+                }
+                System.out.println("skiped over in third iteration");
+            } while (k < 30);
+
+
+        }
+
+
+        THEEND:
+        System.out.println("THE END");
+
+    }
+}

@@ -1,0 +1,21 @@
+package test5;
+
+public class CheckException22 {
+
+   protected void m() throws Exception{}
+}
+
+//in file B.java
+ class B extends CheckException22{
+   public void m(){ }
+}
+
+//in file TestClass.java
+ class TestClass{
+   public static void main(String[] args) throws Exception{
+	   CheckException22 b= new B();
+	   b.m();
+   }
+}
+ 
+

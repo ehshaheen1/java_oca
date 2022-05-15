@@ -1,0 +1,22 @@
+package test2;
+
+public class OperatorCheck {
+
+	public static void main(String[] args) {
+     boolean b=   Boolean.parseBoolean("True");
+     System.out.println(b);
+		int s = 5;
+        s = s+s + mx(s) + ++s;
+        System.out.println(s); 
+
+	}
+    static int mx(int s){
+        for(int i=0; i<3; i++){
+            s = s + i;
+        }
+        return s;
+    }
+}
+
+
+   

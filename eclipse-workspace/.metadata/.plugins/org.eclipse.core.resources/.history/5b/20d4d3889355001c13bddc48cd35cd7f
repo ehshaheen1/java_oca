@@ -1,0 +1,13 @@
+package oca.chapter2;
+
+public class CastingPrimitiveValue {
+
+	public static void main(String[] args) {
+		int x = (int)1.0;
+		short y = (short)1921222; // Stored as 20678
+		int z = (int)9l;
+		long t = 192301398193810323L;
+
+	}
+
+}

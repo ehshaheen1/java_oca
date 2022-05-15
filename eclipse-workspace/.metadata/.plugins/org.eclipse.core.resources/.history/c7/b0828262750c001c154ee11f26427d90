@@ -1,0 +1,18 @@
+package a;
+
+public class Test1 extends IInt{
+   public static void main(String[] args){
+
+	   Test1 s = new Test1();  //1
+      int j = s.thevalue; 
+      System.out.println(j);//2
+      int k = IInt.thevalue;    //3
+      System.out.println(k);
+      int l = thevalue;         //4
+      System.out.println(l);
+   }
+}
+ class IInt{
+    public static int thevalue = 0;
+}
+

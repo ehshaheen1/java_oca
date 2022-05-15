@@ -1,0 +1,19 @@
+package ocatest;
+
+  public class Test{
+	
+	 public static void main(String[] args) {
+
+		 boolean electricity = false;
+
+	        if (electricity) {
+	            System.out.println("watch out!");
+	        } {
+	            System.out.println("not dangerous");
+	        }
+   }
+
+   }
+
+
+

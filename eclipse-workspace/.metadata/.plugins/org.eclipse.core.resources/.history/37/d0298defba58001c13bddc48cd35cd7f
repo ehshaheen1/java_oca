@@ -1,0 +1,16 @@
+package oca.chapter4;
+//import static is format. You cant change it
+import java.util.Arrays;
+import java.util.List;
+
+public class StaticImport {
+
+	public static void main(String[] args) {
+		
+		//List<String> list = asList("one", "two");
+		
+		Arrays.asList("one");
+
+	}
+
+}

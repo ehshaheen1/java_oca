@@ -1,0 +1,30 @@
+package flowcontrol;
+
+public class AbruptException {
+
+	public static void main(String[] args) {
+
+        int [][] integerArray2D = new int[][] {{100, 101, 102}, {200, 201, 202}};
+
+        int index = 1;
+
+        try {
+           int s= integerArray2D[abruptly()][index++] = 392;      // weird but valid
+           System.out.println(s);
+        } catch (Exception e) {
+            System.out.println("catched!");
+        }
+
+        // variable index is not changed, since exception stopped further execution
+        System.out.println(index);
+
+    }
+
+	  static int abruptly () {
+		  return 1;
+	  }
+
+	/*
+	 * static int abruptly () throws Exception { throw new Exception(); }
+	 */
+}

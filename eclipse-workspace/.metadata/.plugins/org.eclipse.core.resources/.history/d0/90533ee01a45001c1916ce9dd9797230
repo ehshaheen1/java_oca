@@ -1,0 +1,35 @@
+package exceptions;
+
+public class CallingCatchAndFinal {
+
+	  // calling method that throws checked exceptions
+    // from catch or finally block
+    // will cause a compile-time error.
+
+    public static void main(String[] args) {
+
+    	CallingCatchAndFinal groceriesShopping = new CallingCatchAndFinal();
+
+        try {
+            groceriesShopping.enterPIN();
+        } catch (Exception e) {
+//            groceriesShopping.enterPIN();                   // does not compile
+            groceriesShopping.checkAvailableAmount();
+            System.out.println("---------8");
+
+        } finally {
+//            groceriesShopping.enterPIN();                   // does not compile
+            groceriesShopping.checkAvailableAmount();
+            System.out.println("---------8");
+        }
+    }
+
+
+    public void enterPIN () throws Exception {
+        throw new Exception();
+    }
+
+    public void checkAvailableAmount() throws RuntimeException {
+        throw  new RuntimeException();
+    }
+}

@@ -1,0 +1,10 @@
+package strings;
+
+public class StringLengthMethod {
+     public static void main(String[] args) {
+
+	 String welcomeMessage = "Please state the nature of the medical emergency";
+
+     System.out.println(welcomeMessage.length());
+  }
+}

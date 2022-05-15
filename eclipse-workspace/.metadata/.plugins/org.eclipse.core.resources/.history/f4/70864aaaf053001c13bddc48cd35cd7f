@@ -1,0 +1,13 @@
+package oca.chapter1;
+
+import java.nio.file.*;
+//import java.nio.*.*; // Two wild card is not accepted 
+//import java.nio.files.Paths.*;
+
+public class InputImports {
+	
+public static void read(Files files) {
+  Paths.get("name");
+
+  }
+}

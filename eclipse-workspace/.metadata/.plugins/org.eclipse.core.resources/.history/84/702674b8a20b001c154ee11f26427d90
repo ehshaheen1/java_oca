@@ -1,0 +1,24 @@
+package a;
+
+
+class Bozo{
+         int type = 0;
+         //public void jump();
+}
+
+
+
+public class Test1 extends Bozo{
+    public Test1(){
+       type = 1;
+     }
+
+     public void jump(){
+        System.out.println("jumping..."+type);
+     }
+
+     public static void main(String[] args){
+        Bozo b = new Test1();
+       // b.jump();
+     }
+}

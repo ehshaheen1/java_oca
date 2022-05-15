@@ -1,0 +1,21 @@
+package arrayVSArrayList;
+
+public class ArrayAndArraylistDifferences {
+
+	public static void main(String[] args) {
+	
+		 // 1. array is not resizeable, while arrayList is.
+        // 2. array elements are added to the array using the index number, while arrayList uses the add() method.
+
+        String [] arrayOfStephenKingsNovelsMadeIntoMovies = new String[6];
+        arrayOfStephenKingsNovelsMadeIntoMovies[0] = "Misery";
+        arrayOfStephenKingsNovelsMadeIntoMovies[1] = "The Shining";
+        arrayOfStephenKingsNovelsMadeIntoMovies[2] = "The Shawshank Redemption";
+        arrayOfStephenKingsNovelsMadeIntoMovies[3] = "It";
+        arrayOfStephenKingsNovelsMadeIntoMovies[4] = "The Green Mile";
+        arrayOfStephenKingsNovelsMadeIntoMovies[5] = "Children of the Corn";
+       // arrayOfStephenKingsNovelsMadeIntoMovies[6] = "If left uncommented, this will throw an Exception!";
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package test3;
+
+public class Inheritance36 {
+
+    int si = 10;
+   public static void main (String args[]){
+      new Inheritance36();
+   }
+   public Inheritance36(){
+      System.out.println(this);
+   }
+   public String toString(){
+      return "Inheritance36.si = "+si;
+   }
+}
+
+

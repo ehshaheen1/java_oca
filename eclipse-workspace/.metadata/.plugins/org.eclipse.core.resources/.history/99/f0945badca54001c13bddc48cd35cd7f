@@ -1,0 +1,14 @@
+package oca.chapter1;
+
+public class GarbageCollector {
+	//The object no longer has any references pointing to it.
+	//All references to the object have gone out of scope.
+public static void main(String[] args) { // Here first garbage collector happen in line no 10
+	 String one, two;
+	 one = new String("a");
+	 two = new String("b");
+	 one = two;
+	 String three = one;
+	 one = null;
+}
+}

@@ -1,0 +1,18 @@
+package oca.chapter6;
+
+public class ThrowException {
+
+	public static void main(String[] args) throws Exception{
+		try {
+			System.out.println("try block");
+			throw new RuntimeException();
+		} catch (RuntimeException e) {
+			System.out.println("Catch block");
+			throw new RuntimeException();
+		} finally {
+			System.out.println("Finally block");
+			throw new Exception();
+		}
+	}
+
+}

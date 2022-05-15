@@ -1,0 +1,16 @@
+package ocatest;
+
+interface GetSetGo {
+    int count = 1; //Line n1
+}
+
+ 
+public class Test {
+    public static void main(String[] args) {
+        GetSetGo [] arr = new GetSetGo[5]; //Line n2
+        for(GetSetGo obj : arr) {
+            //obj.count=2;; //Line n3
+        }
+        System.out.println(GetSetGo.count); //Line n4
+    }
+}

@@ -1,0 +1,15 @@
+package ocatest;
+
+  public class Test{
+	
+	 public static void main(String[] args) {
+		final byte b=35;
+		 char c=b;
+	
+		 char cw=(byte)b;
+   }
+
+
+}
+ 
+

@@ -1,0 +1,12 @@
+package oca.chapter3;
+
+public class WrapperClassExample {
+
+	public static void main(String[] args) {
+		
+		int primitive = Integer.parseInt("123");
+		Integer wrapper = Integer.valueOf("123");
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package ocatest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class A{}
+class B extends A{}
+ 
+abstract class Super {
+    abstract List<A> get() throws ArrayIndexOutOfBoundsException;
+}
+ 
+abstract class Sub extends Super {
+    /*INSERT*/
+	abstract ArrayList<A> get() throws ArrayIndexOutOfBoundsException;
+}
+public class Test {
+    private static void test() throws Exception {
+        throw new Exception();
+    }
+    
+    public static void main(String [] args) {
+        try {
+            test();
+        } catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+            System.out.println("GAME ON");
+        }
+    }
+}

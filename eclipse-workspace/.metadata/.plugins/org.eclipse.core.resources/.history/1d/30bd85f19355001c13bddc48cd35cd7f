@@ -1,0 +1,14 @@
+package oca.chapter2;
+
+public class CastingPrimitiveValue {
+
+	public static void main(String[] args) {
+		int x = (int)10000000000.0;// Casting always goes floor/lower value
+		System.out.println(x);
+		short y = (short)1921222; // Stored as 20678
+		int z = (int)9l;
+		long t = 192301398193810323L;
+
+	}
+
+}

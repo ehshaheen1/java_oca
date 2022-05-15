@@ -1,0 +1,13 @@
+package oca.chapter2;
+
+public class ForEachMethod {
+  //for(datatype instance : collection)
+	public static void main(String[] args) {
+		//String names = "Lisa";
+		//for(String name : names) { // DOES NOT COMPILE // Here names is not collection. Foreach has be collection or array
+		//System.out.print(name + " ");
+		//}
+
+	}
+
+}

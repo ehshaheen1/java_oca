@@ -1,0 +1,13 @@
+package ocabookcode;
+
+public class PublicClassVSFile2 {
+	       }
+
+ class PublicClassVSFile {
+	private String name;
+	
+	public static void main(String[] args) {
+      System.out.println("ops");
+	}
+
+}

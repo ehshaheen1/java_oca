@@ -1,0 +1,10 @@
+package strings;
+
+public class StringLengthMethod {
+     public static void main(String[] args) {
+
+	 String welcomeMessage = "Shaheen";
+
+     System.out.println(welcomeMessage.length());
+  }
+}

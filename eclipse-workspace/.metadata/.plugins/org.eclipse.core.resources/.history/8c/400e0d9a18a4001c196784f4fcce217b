@@ -1,0 +1,20 @@
+package test6;
+
+public class Q40 {
+	   public static void main(String[] args){
+		      N n = new N();
+		      n.makeThisNull();
+		   }
+}
+class N{
+   private Q40 m = new Q40();
+   public void makeItNull(Q40 pM){
+      pM = null;
+   }
+   public void makeThisNull(){
+      makeItNull(m);
+   }
+}
+
+
+

@@ -1,0 +1,22 @@
+package a;
+
+public class Test1  implements I1, I2{
+   public void m1() { System.out.println("Hello"); }
+   public static void main(String[] args){
+	   Test1 tc = new Test1();
+	  
+	   System.out.println(( ( I1) tc).VALUE);
+   }
+}
+interface I1{
+   int VALUE = 1;
+   void m1();
+}
+interface I2{
+   int VALUE = 2;
+   void m1();
+}
+
+
+
+

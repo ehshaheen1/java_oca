@@ -1,0 +1,12 @@
+package oca.chapter5;
+interface CheckInterface{
+	
+}
+public class InterfaceExample implements CheckInterface{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

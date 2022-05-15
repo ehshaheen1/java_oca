@@ -1,0 +1,16 @@
+package ocabookcode;
+
+public class OverloadingTest {
+public static void main(String[] args) {
+	
+
+}
+public int numberVisitors(int month, long day) {
+	return month;
+	
+}
+public void numberVisitors(long month,int day) {
+	return ;
+	
+}
+}

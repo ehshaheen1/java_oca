@@ -1,0 +1,17 @@
+package enthuware;
+import java.io.IOException;
+
+public class TestClass {
+ 
+    public static void main(String[] args) { 
+    	
+    	int [][] a = {{1},null};
+    	System.out.print(a[1][0]);
+
+		/*
+		 * int ia[][] = { {1, 2}, null }; for (int i = 0; i < 2; i++) for (int j = 0; j
+		 * < 2; j++) System.out.println(ia[i][j]);
+		 */
+   }
+}
+

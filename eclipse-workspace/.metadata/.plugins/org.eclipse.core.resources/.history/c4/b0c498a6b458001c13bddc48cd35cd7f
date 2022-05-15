@@ -1,0 +1,14 @@
+package oca.chapter4;
+
+public class StaticVariableAccess {
+
+	public static int count = 0; // static variable
+	
+	public static void main(String[] args) { // static method
+		System.out.println(count);
+		StaticVariableAccess k = new StaticVariableAccess();
+		System.out.println(k.count); // k is a Koala
+		k = null;// We can access static variable by creating object, even in null reference
+		System.out.println(k.count);
+  }
+}

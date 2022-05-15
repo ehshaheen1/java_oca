@@ -1,0 +1,13 @@
+package enthuware;
+
+import java.util.ArrayList;
+
+public class TestEnthuware {
+	public static void main(String[] args) {
+        ArrayList<Double> al = new ArrayList<>();
+    System.out.println(al.indexOf(1.0));
+    System.out.println(al.contains("string"));
+     }
+
+	}
+

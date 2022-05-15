@@ -1,0 +1,20 @@
+package oca.chapter2;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+	  
+		int x = 0;
+		do {
+			int y=5;
+		x++;
+		} while(false);
+		System.out.println(x);
+		
+		while(true) {
+			
+		}
+
+	}
+
+}

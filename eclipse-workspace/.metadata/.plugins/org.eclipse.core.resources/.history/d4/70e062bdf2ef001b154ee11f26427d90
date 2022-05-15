@@ -1,0 +1,22 @@
+package ocatest;
+
+ class M {
+    public void printName() {
+        System.out.println("M");
+    }
+}
+ 
+  class N extends M {
+	    public void printName() {
+	        System.out.println("N");
+	    }
+	}
+  
+public class Test {
+	
+	 public static void main(String [] args) {
+		    M obj1 = new N();
+	        N obj2 = (N)obj1;
+	        obj2.printName();
+          }
+}

@@ -1,0 +1,18 @@
+package test1;
+
+import test1example.InterfaceA;
+
+public class CheckInterface35 implements InterfaceA{
+
+	public static void main(String[] args) {
+
+
+	  CheckInterface35 s = new CheckInterface35();  //1
+      int j = s.thevalue;       //2
+      int k = InterfaceA.thevalue;    //3
+      int l = thevalue;         //4
+   }
+}
+
+
+

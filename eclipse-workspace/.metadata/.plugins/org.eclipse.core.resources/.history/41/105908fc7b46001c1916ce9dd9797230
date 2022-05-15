@@ -1,0 +1,30 @@
+package exceptions;
+
+public class PrintingException {
+
+	 public static void main(String[] args) {
+
+	        try {
+	            method1();
+	        } catch (Exception e) {
+	            System.out.println(e);      // this will print exception type and message from the constructor
+	            e= new ArrayIndexOutOfBoundsException();
+	           // e.printStackTrace();        // this will print exteption type, message, and stack trace
+	        }
+
+	    }
+
+
+	    static void method1 () throws ArithmeticException {
+	        method2();
+	    }
+
+	    static void method2() throws ArithmeticException {
+	        method3();
+	    }
+
+	    static void method3 () throws ArithmeticException {
+	        throw new ArithmeticException("third level exception");
+	    }
+
+}

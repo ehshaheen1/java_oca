@@ -1,0 +1,10 @@
+package oca.chapter4;
+
+public class TestPretected {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

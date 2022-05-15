@@ -1,0 +1,28 @@
+package enthuware;
+
+import java.io.FileNotFoundException;
+
+public class Holder{
+	 static String s1 = new String("java");
+	public static void main(String[] args) {
+		
+    
+     StringBuilder s2 = new StringBuilder("java");
+     replaceString(s1);
+     replaceStringBuilder(s2);
+     System.out.println(s1 + s2);
+  }
+  static void replaceString(String s) {
+     s1 = s.replace('j', 'l');
+  }
+  static void replaceStringBuilder(StringBuilder s) {
+     s.append("c");
+  }
+}
+
+
+
+
+
+
+

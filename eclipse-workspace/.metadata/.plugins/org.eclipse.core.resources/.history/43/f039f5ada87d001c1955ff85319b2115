@@ -1,0 +1,23 @@
+package ocatest;
+
+  public class Test{
+    public void m() throws Exception{
+        throw new Exception();
+    }
+}
+class YY extends Test{
+    public void m(){ }
+    
+    public static void main(String[] args) {
+    	Test  obj = new YY();
+    
+        try {
+			obj.m();
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    
+    }
+}
+

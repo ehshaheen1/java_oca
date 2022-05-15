@@ -1,0 +1,15 @@
+package test3;
+
+public class CheckFinalVariable {
+
+	   static int si = 10;
+	   int  i;
+	   final boolean bool;
+	   bool = true;
+	   // 1
+	public static void main(String[] args) {
+
+
+ }
+
+}

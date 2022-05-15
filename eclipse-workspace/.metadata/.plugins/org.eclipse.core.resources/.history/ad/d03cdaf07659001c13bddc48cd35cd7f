@@ -1,0 +1,5 @@
+package oca.chapter4;
+
+public class OrderOfInitialization2 {
+
+}

@@ -1,0 +1,17 @@
+package enthuware;
+
+
+public class DaysTest{
+
+    
+ //   public static void main(String[] args) {
+
+   static int MAX;     //1
+ //  static final String CLASS_GUID;   // 2
+   DaysTest(){
+       //3
+   }
+   DaysTest(int k){
+       //4
+   }
+}

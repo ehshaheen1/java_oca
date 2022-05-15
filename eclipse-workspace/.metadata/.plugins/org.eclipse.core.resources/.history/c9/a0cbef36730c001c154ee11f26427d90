@@ -1,0 +1,16 @@
+package a;
+
+public class Test1 implements IInt{
+   public static void main(String[] args){
+
+	   Test1 s = new Test1();  //1
+      int j = s.thevalue; 
+      System.out.println(j);//2
+      int k = IInt.thevalue;    //3
+      int l = thevalue;         //4
+   }
+}
+ interface IInt{
+      int thevalue = 0;
+}
+

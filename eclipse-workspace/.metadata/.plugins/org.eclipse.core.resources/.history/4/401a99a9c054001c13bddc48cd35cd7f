@@ -1,0 +1,17 @@
+package oca.chapter1;
+
+public class LocalVariableInitiliazation {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public int ops()
+	{
+		int y = 10; //Local variable need to be initialized before use
+		 int x;
+		// int reply = x + y; // DOES NOT COMPILE
+		 return reply;
+	}
+
+}

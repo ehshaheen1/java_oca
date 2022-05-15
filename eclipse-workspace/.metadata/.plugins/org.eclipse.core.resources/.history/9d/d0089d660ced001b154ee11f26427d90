@@ -1,0 +1,16 @@
+package ocatest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+	
+	 public static void main(String [] args) {
+		 double area = 5.7;
+         String color;
+         if (area < 7)
+             color = "green";
+ 
+         System.out.println(color);
+          }
+}
